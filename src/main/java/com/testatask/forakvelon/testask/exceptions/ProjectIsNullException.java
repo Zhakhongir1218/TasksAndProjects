@@ -1,6 +1,12 @@
 package com.testatask.forakvelon.testask.exceptions;
 
-public class ProjectIsNullException extends Throwable {
+import lombok.Getter;
+import lombok.Setter;
+
+
+@Getter
+@Setter
+public class ProjectIsNullException extends RuntimeException {
     String title;
     public ProjectIsNullException(String message, String title) {
         super(message);
